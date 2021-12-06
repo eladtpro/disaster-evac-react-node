@@ -1,8 +1,8 @@
 
 import React, { ReactNode } from 'react';
-import { CircularProgress, Stack, Typography } from '@mui/material';
-import { CheckCircle, Pending, Error } from '@mui/icons-material';
-
+import { Button, CircularProgress, Stack, Typography } from '@mui/material';
+import { CheckCircle, Pending, Error, Send } from '@mui/icons-material';
+import { publishMessage } from '../services/serviceBus';
 type Status = 'pending' | 'processing' | 'completed';
 
 type ActionProps = {
@@ -14,6 +14,14 @@ type ActionProps = {
 
 const Action: React.FC<ActionProps> = ({ order, title, status, payload }) => {
 
+    const publish = async () => {
+        const message = {
+            order,
+            title,
+            payload
+        }
+        await publishMessage(message);
+    }
 
     const getStatusIcon = (status: Status): ReactNode => {
         switch (status) {
@@ -37,6 +45,7 @@ const Action: React.FC<ActionProps> = ({ order, title, status, payload }) => {
             {order}. {title}
         </Typography>
         {getStatusIcon(status)}
+        <Button startIcon={<Send />} onClick={publish}>Send</Button>
     </Stack>
     )
 }
