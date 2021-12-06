@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Stack, TextField, ToggleButton, ToggleButtonGroup, Tooltip } from '@mui/material';
 import { Bolt, PowerOff, ElectricalServices, Power } from '@mui/icons-material';
 import { LoadingButton } from '@mui/lab';
-import useSignalR, { ConnectionDetails } from '../hooks/signalr';
+import useSignalR, { ConnectionDetails } from '../hooks/useSignalR';
 import { configuration, reactPlugin } from '../core';
 import { GLobalContext } from '../state/GlobalContext';
 
