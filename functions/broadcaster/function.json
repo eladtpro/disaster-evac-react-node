@@ -1,0 +1,25 @@
+{
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": [
+                "post"
+            ]
+        },
+        {
+            "type": "signalR",
+            "name": "signalRMessages",
+            "hubName": "sigr-backchannel",
+            "connectionStringSetting": "AzureSignalRConnectionString",
+            "direction": "out"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+    ]
+}

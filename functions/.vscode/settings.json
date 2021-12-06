@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "obj": true,
+    "bin": true
+  },
+  "azureFunctions.deploySubpath": ".",
+  "azureFunctions.postDeployTask": "npm install (functions)",
+  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.projectRuntime": "~2",
+  "debug.internalConsoleOptions": "neverOpen",
+"azureFunctions.preDeployTask": "npm prune (functions)",
+"cSpell.words": [
+    "backchannel",
+    "sigr"
+]
+}
