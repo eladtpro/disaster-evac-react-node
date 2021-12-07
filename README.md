@@ -1,6 +1,23 @@
-# react-typescript-client-disaster-evac
-react client aimed to be hosted in azure static webapp
+# Application end-to-end Insights
+[![N|Azure Portal](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/azure.svg?raw=true)](https://ms.portal.azure.com/) [![N|Azure Application Insights](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/AppInsights.png?raw=true)](https://azure.microsoft.com/en-us/services/monitor) [![N|CosmosDB](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/CosmosDB.png?raw=true)](https://azure.microsoft.com/en-us/services/cosmos-db) [![N|Azure Functions](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/FunctionApp.png?raw=true)](https://azure.microsoft.com/en-us/services/functions) [![N|Service Bus](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/ServiceBus.png?raw=true)](https://azure.microsoft.com/en-us/services/service-bus) [![N|Azure SignalR Service](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/SignalR.png?raw=true)](https://azure.microsoft.com/en-us/services/signalr-service) [![N|Static Web Apps](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/StaticWebApp.png?raw=true)](https://azure.microsoft.com/en-us/services/app-service/static) [![N|Storage](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/StorageAccount.png?raw=true)](https://azure.microsoft.com/en-us/product-categories/storage)
 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+A Monitoring demo aimed at the development team; A Saga distributed transaction application flow scenario on a dockerized microservices environment.
+A Flow from client to the backend, use event system, and client socket backchannel. Use of W3C correlation keys for the coordinated
+application flow
+
+Monitor live application for performance anomalies, analytics, and user/request flows. Diagnose issues by using request/dependency logging, performance/diagnostics sampling, and client logging.
+ 
+Application Insights, a feature of Azure Monitor, is an extendable Application Performance Management (APM) service for developers and DevOps professionals. Connects global clouds with on-prem solutions.
+Supplies automatic integration in both; SPA clients and containerized backend services using configuration only.
+Introduce Application-map, Live profiler, Smart detection, Transaction view, Usage analysis, and Alerts.
+
+
+___
+
+## Azure Pass
+> To redeem a promo code, visit [microsoftazurepass.com](https://www.microsoftazurepass.com/) and follow these [Azure Pass redemption instructions](https://www.microsoftazurepass.com/Home/HowTo) 
 
 ___
 ## Prerequisites
@@ -131,9 +148,9 @@ ___
 
 ###### Monitor
 - [Log custom telemetry (operation_id)](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=v2#log-custom-telemetry)
+- [How to run Azure Application Insights in developer mode for Javascript (node.js)](https://stackoverflow.com/questions/55183717/how-to-run-azure-application-insights-in-developer-mode-for-javascript-node-js)
 
-#### Tooling
-[Visual Studio Code Project Runtime](https://github.com/Microsoft/vscode-azurefunctions/wiki/Project-Runtime)
-
-#### Other
-[stackoverflow: Cosmos DB Trigger binding not registered?](https://stackoverflow.com/questions/60239375/cosmos-db-trigger-binding-not-registered)
+#### Tooling & Misc
+- [Visual Studio Code Project Runtime](https://github.com/Microsoft/vscode-azurefunctions/wiki/Project-Runtime)
+- [Functions V4 - Require a minimum version for supported extensions](https://github.com/Azure/Azure-Functions/issues/1987)
+- [stackoverflow: Cosmos DB Trigger binding not registered?](https://stackoverflow.com/questions/60239375/cosmos-db-trigger-binding-not-registered)

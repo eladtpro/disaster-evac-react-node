@@ -1,7 +1,7 @@
 {
     "bindings": [
         {
-            "topicName": "evac-process",
+            "queueName": "evac-process-q",
             "connection": "AzureServiceBusConnectionString",
             "name": "topicItem",
             "type": "serviceBusTrigger",

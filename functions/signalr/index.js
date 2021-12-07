@@ -1,5 +1,6 @@
 const appInsights = require("applicationinsights");
-appInsights.setup();
+appInsights.setup().setInternalLogging(true, true);
+appInsights.defaultClient.config.maxBatchSize = 1;
 const client = appInsights.defaultClient;
 
 module.exports = async function (context, _req, connectionInfo) {
