@@ -10,10 +10,10 @@
             ]
         },
         {
-            "type": "signalR",
-            "name": "signalRMessages",
-            "hubName": "sigr-backchannel",
-            "connectionStringSetting": "AzureSignalRConnectionString",
+            "name": "outputSbQueue",
+            "type": "serviceBus",
+            "topicName": "evac-process",
+            "connection": "AzureServiceBusConnectionString",
             "direction": "out"
         },
         {

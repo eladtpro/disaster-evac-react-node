@@ -1,0 +1,26 @@
+{
+    "bindings": [
+        {
+            "name": "inputDocumentIn",
+            "type": "cosmosDB",
+            "databaseName": "db-actions",
+            "collectionName": "items",
+            "id": "id",
+            "partitionKey": "operation_id",
+            "connectionStringSetting": "AzureCosmosDBConnectionString",
+            "direction": "in"
+        },
+        {
+            "type": "signalR",
+            "name": "signalRMessages",
+            "hubName": "sigr-backchannel",
+            "connectionStringSetting": "AzureSignalRConnectionString",
+            "direction": "out"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+    ]
+}

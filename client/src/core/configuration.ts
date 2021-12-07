@@ -4,7 +4,7 @@ const configuration = {
         disconnectBeforeUnload: false
     },
     serviceBus:{
-        topicEndpoint: process.env.REACT_APP_SERVICEBUS_PUBLISH_ENDPOINT!
+        topicEndpoint: process.env.REACT_APP_QUEUE_CHANGE_ENDPOINT!
     },
     monitor:{
         appInsightsKey: process.env.REACT_APP_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY!

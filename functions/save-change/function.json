@@ -1,0 +1,20 @@
+{
+    "bindings": [
+        {
+            "topicName": "evac-process",
+            "connection": "AzureServiceBusConnectionString",
+            "name": "topicItem",
+            "type": "serviceBusTrigger",
+            "direction": "in"
+        },
+        {
+            "name": "actionDocument",
+            "type": "cosmosDB",
+            "databaseName": "db-actions",
+            "collectionName": "items",
+            "createIfNotExists": true,
+            "connectionStringSetting": "AzureCosmosDBConnectionString",
+            "direction": "out"
+        }
+    ]
+}

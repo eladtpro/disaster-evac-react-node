@@ -1,9 +1,9 @@
 import Notification from './Notification';
 import SignalR from './SignalR';
-import Action from './Action';
+import Actions from './Actions';
 
 export {
     Notification,
     SignalR,
-    Action
+    Actions
 }

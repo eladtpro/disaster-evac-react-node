@@ -1,22 +1,17 @@
-#variable "ResouceGroupName" {
-#  type = string
-#}
+variable "rgName" {
+  type = string
+}
 
 locals {
   location = "westeurope"
-  rgName   = "rg-saga"
+#  rgName   = "rg-saga"
 }
 
 provider "azurerm" {
   features {}
 }
 
-#data "azurerm_key_vault_secret" "userName" {
-#  name         = var.userNameSecret
-#  key_vault_id = var.kvId
-#}
-
 resource "azurerm_resource_group" "resource-group" {
-  name     = local.rgName
+  name     = var.rgName
   location = local.location
 }

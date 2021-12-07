@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { configuration } from '../core';
 
-const publishMessage = async (message: any): Promise<void> => {
+const queueChange = async (message: any): Promise<void> => {
     const details = await axios
         .post(configuration.serviceBus.topicEndpoint, message)
         .then(({ data }) => console.log('message published successfully'))
@@ -9,4 +9,4 @@ const publishMessage = async (message: any): Promise<void> => {
     return details;
 }
 
-export { publishMessage }
+export { queueChange }
