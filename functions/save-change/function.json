@@ -3,7 +3,7 @@
         {
             "queueName": "evac-process-q",
             "connection": "AzureServiceBusConnectionString",
-            "name": "topicItem",
+            "name": "queueItem",
             "type": "serviceBusTrigger",
             "direction": "in"
         },

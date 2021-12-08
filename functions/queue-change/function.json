@@ -10,7 +10,7 @@
             ]
         },
         {
-            "name": "outputSbTopic",
+            "name": "outputQueueItem",
             "type": "serviceBus",
             "queueName": "evac-process-q",
             "connection": "AzureServiceBusConnectionString",

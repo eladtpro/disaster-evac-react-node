@@ -73,7 +73,7 @@ const SignalR: React.FC = () => {
             <TextField
                 fullWidth
                 id="standard-helperText"
-                defaultValue={details?.url}
+                value={details?.url}
                 placeholder="SignalR Connection String"
                 variant="standard"
                 onChange={onChange}
