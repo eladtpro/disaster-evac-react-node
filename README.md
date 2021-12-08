@@ -111,6 +111,11 @@ ___
 ___
 ## Flow
 
+
+[![N|Flow Diagram](https://github.com/eladtpro/disaster-evac-react-node/blob/main/.readme/ApplicationE2EInsightsvsdx.png?raw=true)](https://github.com/eladtpro/python-iothub-cosmos)
+
+
+
 > Happens for each status change
 
 | #   | Action          | Source                      | Destination                 |
@@ -154,3 +159,26 @@ ___
 - [Visual Studio Code Project Runtime](https://github.com/Microsoft/vscode-azurefunctions/wiki/Project-Runtime)
 - [Functions V4 - Require a minimum version for supported extensions](https://github.com/Azure/Azure-Functions/issues/1987)
 - [stackoverflow: Cosmos DB Trigger binding not registered?](https://stackoverflow.com/questions/60239375/cosmos-db-trigger-binding-not-registered)
+
+___
+
+#### Tools
+
+Useful tooling
+
+| Tool | Reference |
+| ------ | ------ |
+| *Azure (Portal)* | https://azure.microsoft.com/en-us/features/azure-portal |
+| *Terraform by HashiCorp* | https://www.terraform.io/downloads.html |
+| *Visual Studio Code* | https://code.visualstudio.com/download |
+| *Windows Terminal* | https://docs.microsoft.com/en-us/windows/terminal/get-started |
+
+
+
+#### License
+
+MIT
+
+----
+
+**Elad Tal (CE @ Microsoft)**
