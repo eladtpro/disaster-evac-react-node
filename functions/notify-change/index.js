@@ -20,6 +20,6 @@ module.exports = async function (context, documents) {
     });
 
     context.res = {
-        status: 204
+        status: 200
     };
 }
