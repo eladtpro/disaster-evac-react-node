@@ -3,5 +3,8 @@
         "clickaway",
         "onreconnecting",
         "signalr"
+    ],
+    "cSpell.ignoreWords": [
+        "STATUSUPDATES"
     ]
 }

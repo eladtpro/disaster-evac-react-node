@@ -1,14 +1,14 @@
 {
     "bindings": [
         {
-            "name": "inputDocumentIn",
-            "type": "cosmosDB",
+            "type": "cosmosDBTrigger",
+            "name": "documents",
+            "direction": "in",
+            "leaseCollectionName": "leases",
+            "connectionStringSetting": "AzureCosmosDBConnectionString",
             "databaseName": "db-actions",
             "collectionName": "items",
-            "id": "id",
-            "partitionKey": "operation_id",
-            "connectionStringSetting": "AzureCosmosDBConnectionString",
-            "direction": "in"
+            "createLeaseCollectionIfNotExists": true
         },
         {
             "type": "signalR",

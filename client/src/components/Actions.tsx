@@ -55,10 +55,11 @@ const Actions: React.FC = () => {
         setRows(copy);
 
         queueChange(row)
-            .then(() => {
+            .then((res) => {
                 copy = [...rows];
                 const index = copy.findIndex(r => r.order === row.order);
                 copy[index].status = 'completed';
+                copy[index].payload = res.operation_id;
                 setRows(copy);
                 setNotification({ message: `${copy[index].title} queued successfully` });
             })
@@ -76,8 +77,9 @@ const Actions: React.FC = () => {
             <Table sx={{ minWidth: 650 }} aria-label="actions table">
                 <TableHead>
                     <TableRow>
-                        <TableCell align="right">#</TableCell>
+                        <TableCell>#</TableCell>
                         <TableCell>Title</TableCell>
+                        <TableCell>Payload</TableCell>
                         <TableCell>Status</TableCell>
                         <TableCell></TableCell>
                     </TableRow>
@@ -87,10 +89,12 @@ const Actions: React.FC = () => {
                         <TableRow
                             key={row.order}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                            <TableCell>{row.order}</TableCell>
                             <TableCell component="th" scope="row">
                                 {row.title}
                             </TableCell>
-                            <TableCell align="right">{getStatusIcon(row.status)}</TableCell>
+                            <TableCell>{row.payload}</TableCell>
+                            <TableCell>{getStatusIcon(row.status)}</TableCell>
                             <TableCell align="right"><Button endIcon={<Send />} onClick={() => onClick(row)} disabled={row.status === 'completed' || row.status === 'processing'}>Send</Button></TableCell>
                         </TableRow>
                     ))}

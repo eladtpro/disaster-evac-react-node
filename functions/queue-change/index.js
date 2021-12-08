@@ -14,15 +14,7 @@ module.exports = async function (context, req) {
 
     context.bindings.outputQueueItem = message;
     context.res = {
-        status: 204
+        status: 200,
+        body: JSON.stringify({ operation_id: context.traceContext.traceparent})
     };
 }
-
-//context.log(context.req.rawBody);
-//context.log(context.req.body);
-//context.log(JSON.parse(context.req.rawBody));
-//context.log(req.rawBody);
-//context.log(req.body);
-//context.log(JSON.parse(req.rawBody));
-//context.log(context.traceContext);
-//context.log(context.traceContext.traceparent);
