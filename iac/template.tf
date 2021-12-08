@@ -21,3 +21,5 @@ resource "azurerm_static_site" "stapp-reactjs" {
   location            = local.location
   sku_tier            = "Standard"
 }
+
+
