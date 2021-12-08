@@ -72,9 +72,10 @@ resource "azurerm_function_app" "saga" {
   app_service_plan_id        = azurerm_app_service_plan.saga.id
   storage_account_name       = azurerm_storage_account.saga.name
   storage_account_access_key = azurerm_storage_account.saga.primary_access_key
-#  app_settings {
-#    APPINSIGHTS_INSTRUMENTATIONKEY = azurerm_application_insights.saga.instrumentation_key
-#  }
+
+  app_settings = {
+    "APPINSIGHTS_INSTRUMENTATIONKEY" = "${azurerm_application_insights.saga.instrumentation_key}"
+  }
 }
 
 resource "azurerm_cosmosdb_account" "saga" {
