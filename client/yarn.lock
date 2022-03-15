@@ -5929,10 +5929,10 @@
     "tiny-warning" "^1.0.0"
     "value-equal" "^1.0.1"
 
-"history@^5.1.0":
-  "integrity" "sha512-zPuQgPacm2vH2xdORvGGz1wQMuHSIB56yNAy5FnLuwOwgSYyPKptJtcMm6Ev+hRGeS+GzhbmRacHzvlESbFwDg=="
-  "resolved" "https://registry.npmjs.org/history/-/history-5.1.0.tgz"
-  "version" "5.1.0"
+"history@^5.1.0", "history@^5.3.0":
+  "integrity" "sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ=="
+  "resolved" "https://registry.npmjs.org/history/-/history-5.3.0.tgz"
+  "version" "5.3.0"
   dependencies:
     "@babel/runtime" "^7.7.6"
 
